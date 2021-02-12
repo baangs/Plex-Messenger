@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5701528925D61F1C0089BB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528825D61F1C0089BB36 /* AppDelegate.swift */; };
+		5701528B25D61F1C0089BB36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528A25D61F1C0089BB36 /* SceneDelegate.swift */; };
+		5701528D25D61F1C0089BB36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528C25D61F1C0089BB36 /* ViewController.swift */; };
+		5701529025D61F1C0089BB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5701528E25D61F1C0089BB36 /* Main.storyboard */; };
+		5701529225D61F1F0089BB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5701529125D61F1F0089BB36 /* Assets.xcassets */; };
+		5701529525D61F1F0089BB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5701529325D61F1F0089BB36 /* LaunchScreen.storyboard */; };
+		570152A025D61F1F0089BB36 /* PlexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701529F25D61F1F0089BB36 /* PlexTests.swift */; };
+		570152AB25D61F1F0089BB36 /* PlexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570152AA25D61F1F0089BB36 /* PlexUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5701529C25D61F1F0089BB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5701527D25D61F1C0089BB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5701528425D61F1C0089BB36;
+			remoteInfo = Plex;
+		};
+		570152A725D61F1F0089BB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5701527D25D61F1C0089BB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5701528425D61F1C0089BB36;
+			remoteInfo = Plex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5701528525D61F1C0089BB36 /* Plex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5701528825D61F1C0089BB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5701528A25D61F1C0089BB36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5701528C25D61F1C0089BB36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5701528F25D61F1C0089BB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5701529125D61F1F0089BB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5701529425D61F1F0089BB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5701529625D61F1F0089BB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5701529B25D61F1F0089BB36 /* PlexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5701529F25D61F1F0089BB36 /* PlexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexTests.swift; sourceTree = "<group>"; };
+		570152A125D61F1F0089BB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570152A625D61F1F0089BB36 /* PlexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		570152AA25D61F1F0089BB36 /* PlexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexUITests.swift; sourceTree = "<group>"; };
+		570152AC25D61F1F0089BB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5701528225D61F1C0089BB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5701529825D61F1F0089BB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570152A325D61F1F0089BB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5701527C25D61F1C0089BB36 = {
+			isa = PBXGroup;
+			children = (
+				5701528725D61F1C0089BB36 /* Plex */,
+				5701529E25D61F1F0089BB36 /* PlexTests */,
+				570152A925D61F1F0089BB36 /* PlexUITests */,
+				5701528625D61F1C0089BB36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5701528625D61F1C0089BB36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5701528525D61F1C0089BB36 /* Plex.app */,
+				5701529B25D61F1F0089BB36 /* PlexTests.xctest */,
+				570152A625D61F1F0089BB36 /* PlexUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5701528725D61F1C0089BB36 /* Plex */ = {
+			isa = PBXGroup;
+			children = (
+				5701528825D61F1C0089BB36 /* AppDelegate.swift */,
+				5701528A25D61F1C0089BB36 /* SceneDelegate.swift */,
+				5701528C25D61F1C0089BB36 /* ViewController.swift */,
+				5701528E25D61F1C0089BB36 /* Main.storyboard */,
+				5701529125D61F1F0089BB36 /* Assets.xcassets */,
+				5701529325D61F1F0089BB36 /* LaunchScreen.storyboard */,
+				5701529625D61F1F0089BB36 /* Info.plist */,
+			);
+			path = Plex;
+			sourceTree = "<group>";
+		};
+		5701529E25D61F1F0089BB36 /* PlexTests */ = {
+			isa = PBXGroup;
+			children = (
+				5701529F25D61F1F0089BB36 /* PlexTests.swift */,
+				570152A125D61F1F0089BB36 /* Info.plist */,
+			);
+			path = PlexTests;
+			sourceTree = "<group>";
+		};
+		570152A925D61F1F0089BB36 /* PlexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				570152AA25D61F1F0089BB36 /* PlexUITests.swift */,
+				570152AC25D61F1F0089BB36 /* Info.plist */,
+			);
+			path = PlexUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5701528425D61F1C0089BB36 /* Plex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570152AF25D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "Plex" */;
+			buildPhases = (
+				5701528125D61F1C0089BB36 /* Sources */,
+				5701528225D61F1C0089BB36 /* Frameworks */,
+				5701528325D61F1C0089BB36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plex;
+			productName = Plex;
+			productReference = 5701528525D61F1C0089BB36 /* Plex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5701529A25D61F1F0089BB36 /* PlexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570152B225D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexTests" */;
+			buildPhases = (
+				5701529725D61F1F0089BB36 /* Sources */,
+				5701529825D61F1F0089BB36 /* Frameworks */,
+				5701529925D61F1F0089BB36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5701529D25D61F1F0089BB36 /* PBXTargetDependency */,
+			);
+			name = PlexTests;
+			productName = PlexTests;
+			productReference = 5701529B25D61F1F0089BB36 /* PlexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		570152A525D61F1F0089BB36 /* PlexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570152B525D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexUITests" */;
+			buildPhases = (
+				570152A225D61F1F0089BB36 /* Sources */,
+				570152A325D61F1F0089BB36 /* Frameworks */,
+				570152A425D61F1F0089BB36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				570152A825D61F1F0089BB36 /* PBXTargetDependency */,
+			);
+			name = PlexUITests;
+			productName = PlexUITests;
+			productReference = 570152A625D61F1F0089BB36 /* PlexUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5701527D25D61F1C0089BB36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5701528425D61F1C0089BB36 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					5701529A25D61F1F0089BB36 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5701528425D61F1C0089BB36;
+					};
+					570152A525D61F1F0089BB36 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5701528425D61F1C0089BB36;
+					};
+				};
+			};
+			buildConfigurationList = 5701528025D61F1C0089BB36 /* Build configuration list for PBXProject "Plex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5701527C25D61F1C0089BB36;
+			productRefGroup = 5701528625D61F1C0089BB36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5701528425D61F1C0089BB36 /* Plex */,
+				5701529A25D61F1F0089BB36 /* PlexTests */,
+				570152A525D61F1F0089BB36 /* PlexUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5701528325D61F1C0089BB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5701529525D61F1F0089BB36 /* LaunchScreen.storyboard in Resources */,
+				5701529225D61F1F0089BB36 /* Assets.xcassets in Resources */,
+				5701529025D61F1C0089BB36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5701529925D61F1F0089BB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570152A425D61F1F0089BB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5701528125D61F1C0089BB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5701528D25D61F1C0089BB36 /* ViewController.swift in Sources */,
+				5701528925D61F1C0089BB36 /* AppDelegate.swift in Sources */,
+				5701528B25D61F1C0089BB36 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5701529725D61F1F0089BB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570152A025D61F1F0089BB36 /* PlexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570152A225D61F1F0089BB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570152AB25D61F1F0089BB36 /* PlexUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5701529D25D61F1F0089BB36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5701528425D61F1C0089BB36 /* Plex */;
+			targetProxy = 5701529C25D61F1F0089BB36 /* PBXContainerItemProxy */;
+		};
+		570152A825D61F1F0089BB36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5701528425D61F1C0089BB36 /* Plex */;
+			targetProxy = 570152A725D61F1F0089BB36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5701528E25D61F1C0089BB36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5701528F25D61F1C0089BB36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5701529325D61F1F0089BB36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5701529425D61F1F0089BB36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		570152AD25D61F1F0089BB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		570152AE25D61F1F0089BB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		570152B025D61F1F0089BB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = Plex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.Plex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		570152B125D61F1F0089BB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = Plex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.Plex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		570152B325D61F1F0089BB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = PlexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.PlexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plex.app/Plex";
+			};
+			name = Debug;
+		};
+		570152B425D61F1F0089BB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = PlexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.PlexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plex.app/Plex";
+			};
+			name = Release;
+		};
+		570152B625D61F1F0089BB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = PlexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.PlexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Plex;
+			};
+			name = Debug;
+		};
+		570152B725D61F1F0089BB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRZHK8S4W4;
+				INFOPLIST_FILE = PlexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BandCamp.PlexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Plex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5701528025D61F1C0089BB36 /* Build configuration list for PBXProject "Plex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570152AD25D61F1F0089BB36 /* Debug */,
+				570152AE25D61F1F0089BB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570152AF25D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "Plex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570152B025D61F1F0089BB36 /* Debug */,
+				570152B125D61F1F0089BB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570152B225D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570152B325D61F1F0089BB36 /* Debug */,
+				570152B425D61F1F0089BB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570152B525D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570152B625D61F1F0089BB36 /* Debug */,
+				570152B725D61F1F0089BB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5701527D25D61F1C0089BB36 /* Project object */;
+}
