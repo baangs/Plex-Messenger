@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ConversationViewController: UIViewController {
 
@@ -14,13 +15,18 @@ class ConversationViewController: UIViewController {
         
         view.backgroundColor = .red
         
+        
+        
     }
     
-    //check if user is logged in
+    //check if user is logged in/launchcontroller
     override func viewDidAppear(_ animated: Bool) {
-        let isLoggedIn = UserDefaults.standard.bool(forKey: "logged_in")
         
-        if !isLoggedIn {
+        validateAuth()
+    }
+    
+    private func validateAuth(){
+        if FirebaseAuth.Auth.auth().currentUser == nil {
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
