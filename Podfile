@@ -6,6 +6,9 @@ target 'Plex' do
   use_frameworks!
 
   # Pods for Plex
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
   target 'PlexTests' do
     inherit! :search_paths

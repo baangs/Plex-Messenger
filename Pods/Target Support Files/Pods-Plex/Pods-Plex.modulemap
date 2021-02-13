@@ -1,0 +1,6 @@
+framework module Pods_Plex {
+  umbrella header "Pods-Plex-umbrella.h"
+
+  export *
+  module * { export * }
+}

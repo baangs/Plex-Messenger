@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     
@@ -21,6 +22,9 @@ class RegisterViewController: UIViewController {
         imageView.image = UIImage(systemName: "person")
         imageView.tintColor = .gray
         imageView.contentMode = .scaleAspectFit
+        imageView.layer.masksToBounds = true
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.lightGray.cgColor
         return imageView
     }()
 
@@ -122,7 +126,7 @@ class RegisterViewController: UIViewController {
         scrollView.addSubview(passwordField)
         scrollView.addSubview(registerButton)
         
-        //need to enable interation on the image view and scrollview
+        //need to enable interaction on the image view and scrollview
         imageView.isUserInteractionEnabled = true
         scrollView.isUserInteractionEnabled = true
         
@@ -133,7 +137,7 @@ class RegisterViewController: UIViewController {
     }
     //function for gesture
     @objc private func didTapChangeProfilePic() {
-        print("func is being called profile pic")
+        presentPhotoActionSheet()
     }
     
     //layout subviews for logo
@@ -144,6 +148,8 @@ class RegisterViewController: UIViewController {
         
         let size = view.width/3
         imageView.frame = CGRect(x: (view.width-size)/2, y: 40, width: size, height: size)
+        imageView.layer.cornerRadius = imageView.width/2.0
+        
         firstNameField.frame = CGRect(x: 30, y: imageView.bottom+20, width: scrollView.width-60, height: 52)
         lastNameField.frame = CGRect(x: 30, y: firstNameField.bottom+20, width: scrollView.width-60, height: 52)
         emailField.frame = CGRect(x: 30, y: lastNameField.bottom+20, width: scrollView.width-60, height: 52)
@@ -170,6 +176,17 @@ class RegisterViewController: UIViewController {
         }
         
     //firebase register
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {authResult, error in
+            guard let result = authResult, error == nil else{
+                print("Error creating user.")
+                return
+            }
+            
+            let user = result.user
+            print("Created User \(user)")
+        })
+        
+      
         
     }
     //alert to enter all info before trying to register
@@ -179,14 +196,14 @@ class RegisterViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    //once user taps register button  , push register controller to screen
+    //once user taps register button, push register controller to screen
     @objc private func didTapRegister(){
         let vc = RegisterViewController()
         vc.title = "Create Account"
         navigationController?.pushViewController(vc, animated: true)
     }
 }
-
+//goes from email to password when hitting return or continue, check line 112
 extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -202,3 +219,54 @@ extension RegisterViewController: UITextFieldDelegate {
     
 }
 
+//this allows user to add a profile pick when registering, shows ways to uplaod
+extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func presentPhotoActionSheet(){
+        let actionSheet = UIAlertController(title: "Upload profile pictue", message: "How would you like to select a picture?", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        actionSheet.addAction(UIAlertAction(title: "Take Photo", style: .default, handler:{[weak self] _ in
+            self?.presentCamera()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Choose Photo", style: .default, handler:{[weak self] _ in
+            self?.presentPhotoPicker()
+        }))
+        
+        present(actionSheet, animated: true)
+    }
+    
+    //present camera by leveraging UIImagePickerController
+    func presentCamera() {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+        
+    }
+    //present the camera roll
+    func presentPhotoPicker(){
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
+        
+    }
+    //capture image if user chooses to upload picture
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        print(info)
+        guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+            return
+        }
+        
+        self.imageView.image = selectedImage
+    }
+    
+    //user decides not to upload image, captures the cancel click
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+}

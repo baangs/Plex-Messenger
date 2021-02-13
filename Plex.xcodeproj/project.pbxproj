@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B12BE75257E0D53F63995AE /* Pods_Plex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C75E3DD6845161C9DCDB6B /* Pods_Plex.framework */; };
 		5701528925D61F1C0089BB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528825D61F1C0089BB36 /* AppDelegate.swift */; };
 		5701528B25D61F1C0089BB36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528A25D61F1C0089BB36 /* SceneDelegate.swift */; };
 		5701528D25D61F1C0089BB36 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701528C25D61F1C0089BB36 /* ConversationViewController.swift */; };
@@ -22,6 +23,9 @@
 		570152DC25D623DD0089BB36 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570152DB25D623DD0089BB36 /* NewConversationViewController.swift */; };
 		570152E125D623F30089BB36 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570152E025D623F30089BB36 /* ProfileViewController.swift */; };
 		570152ED25D6401B0089BB36 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570152EC25D6401B0089BB36 /* Extensions.swift */; };
+		5701531225D76BEE0089BB36 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5701531125D76BEE0089BB36 /* GoogleService-Info.plist */; };
+		92138606B7DC9823BE5E57AC /* Pods_Plex_PlexUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDE86AC985AA071DB0FA32A /* Pods_Plex_PlexUITests.framework */; };
+		F2B7EC302C91036B8503287F /* Pods_PlexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159556E4CA744F09FA51C7E2 /* Pods_PlexTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074B3309068EAC0E0E980B56 /* Pods-Plex-PlexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plex-PlexUITests.debug.xcconfig"; path = "Target Support Files/Pods-Plex-PlexUITests/Pods-Plex-PlexUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		159556E4CA744F09FA51C7E2 /* Pods_PlexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6FE36093CAD47CF3B8BE5B /* Pods-PlexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlexTests.release.xcconfig"; path = "Target Support Files/Pods-PlexTests/Pods-PlexTests.release.xcconfig"; sourceTree = "<group>"; };
 		5701528525D61F1C0089BB36 /* Plex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5701528825D61F1C0089BB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5701528A25D61F1C0089BB36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +70,13 @@
 		570152DB25D623DD0089BB36 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		570152E025D623F30089BB36 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		570152EC25D6401B0089BB36 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5701531125D76BEE0089BB36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A9635A01853A6DF3F08082B /* Pods-Plex-PlexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plex-PlexUITests.release.xcconfig"; path = "Target Support Files/Pods-Plex-PlexUITests/Pods-Plex-PlexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84C75E3DD6845161C9DCDB6B /* Pods_Plex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9EDAE9F2529AC1570049D3 /* Pods-Plex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plex.debug.xcconfig"; path = "Target Support Files/Pods-Plex/Pods-Plex.debug.xcconfig"; sourceTree = "<group>"; };
+		9BDE86AC985AA071DB0FA32A /* Pods_Plex_PlexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plex_PlexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68B628649430F1242BB067E /* Pods-Plex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plex.release.xcconfig"; path = "Target Support Files/Pods-Plex/Pods-Plex.release.xcconfig"; sourceTree = "<group>"; };
+		E25B528F709D6E75A52A63EC /* Pods-PlexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlexTests.debug.xcconfig"; path = "Target Support Files/Pods-PlexTests/Pods-PlexTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B12BE75257E0D53F63995AE /* Pods_Plex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B7EC302C91036B8503287F /* Pods_PlexTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92138606B7DC9823BE5E57AC /* Pods_Plex_PlexUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +114,8 @@
 				5701529E25D61F1F0089BB36 /* PlexTests */,
 				570152A925D61F1F0089BB36 /* PlexUITests */,
 				5701528625D61F1C0089BB36 /* Products */,
+				E5BEF598DC8654CB2FE6476F /* Pods */,
+				9E3D28B792D695E8C4B27593 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +132,7 @@
 		5701528725D61F1C0089BB36 /* Plex */ = {
 			isa = PBXGroup;
 			children = (
+				5701531125D76BEE0089BB36 /* GoogleService-Info.plist */,
 				570152BF25D6220C0089BB36 /* Resources */,
 				570152BE25D622030089BB36 /* View Models */,
 				570152BD25D621F80089BB36 /* Models */,
@@ -205,6 +225,29 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9E3D28B792D695E8C4B27593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C75E3DD6845161C9DCDB6B /* Pods_Plex.framework */,
+				9BDE86AC985AA071DB0FA32A /* Pods_Plex_PlexUITests.framework */,
+				159556E4CA744F09FA51C7E2 /* Pods_PlexTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5BEF598DC8654CB2FE6476F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B9EDAE9F2529AC1570049D3 /* Pods-Plex.debug.xcconfig */,
+				C68B628649430F1242BB067E /* Pods-Plex.release.xcconfig */,
+				074B3309068EAC0E0E980B56 /* Pods-Plex-PlexUITests.debug.xcconfig */,
+				5A9635A01853A6DF3F08082B /* Pods-Plex-PlexUITests.release.xcconfig */,
+				E25B528F709D6E75A52A63EC /* Pods-PlexTests.debug.xcconfig */,
+				1F6FE36093CAD47CF3B8BE5B /* Pods-PlexTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 570152AF25D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "Plex" */;
 			buildPhases = (
+				71CA59DEF60614EC7A7C4283 /* [CP] Check Pods Manifest.lock */,
 				5701528125D61F1C0089BB36 /* Sources */,
 				5701528225D61F1C0089BB36 /* Frameworks */,
 				5701528325D61F1C0089BB36 /* Resources */,
+				524563C3B3205354C2CBA81E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 570152B225D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexTests" */;
 			buildPhases = (
+				DC543C15ABFC727C6E56F834 /* [CP] Check Pods Manifest.lock */,
 				5701529725D61F1F0089BB36 /* Sources */,
 				5701529825D61F1F0089BB36 /* Frameworks */,
 				5701529925D61F1F0089BB36 /* Resources */,
@@ -247,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 570152B525D61F1F0089BB36 /* Build configuration list for PBXNativeTarget "PlexUITests" */;
 			buildPhases = (
+				19F6BE35931EFCEB5462F9E0 /* [CP] Check Pods Manifest.lock */,
 				570152A225D61F1F0089BB36 /* Sources */,
 				570152A325D61F1F0089BB36 /* Frameworks */,
 				570152A425D61F1F0089BB36 /* Resources */,
+				6F7B9852BA6D0C4AAAB9A56F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5701529525D61F1F0089BB36 /* LaunchScreen.storyboard in Resources */,
+				5701531225D76BEE0089BB36 /* GoogleService-Info.plist in Resources */,
 				5701529225D61F1F0089BB36 /* Assets.xcassets in Resources */,
 				5701529025D61F1C0089BB36 /* Main.storyboard in Resources */,
 			);
@@ -329,6 +378,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19F6BE35931EFCEB5462F9E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plex-PlexUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		524563C3B3205354C2CBA81E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plex/Pods-Plex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plex/Pods-Plex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plex/Pods-Plex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7B9852BA6D0C4AAAB9A56F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plex-PlexUITests/Pods-Plex-PlexUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Plex-PlexUITests/Pods-Plex-PlexUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Plex-PlexUITests/Pods-Plex-PlexUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CA59DEF60614EC7A7C4283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC543C15ABFC727C6E56F834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlexTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5701528125D61F1C0089BB36 /* Sources */ = {
@@ -517,6 +669,7 @@
 		};
 		570152B025D61F1F0089BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9EDAE9F2529AC1570049D3 /* Pods-Plex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +689,7 @@
 		};
 		570152B125D61F1F0089BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68B628649430F1242BB067E /* Pods-Plex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,6 +709,7 @@
 		};
 		570152B325D61F1F0089BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25B528F709D6E75A52A63EC /* Pods-PlexTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -577,6 +732,7 @@
 		};
 		570152B425D61F1F0089BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6FE36093CAD47CF3B8BE5B /* Pods-PlexTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,6 +755,7 @@
 		};
 		570152B625D61F1F0089BB36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 074B3309068EAC0E0E980B56 /* Pods-Plex-PlexUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +776,7 @@
 		};
 		570152B725D61F1F0089BB36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9635A01853A6DF3F08082B /* Pods-Plex-PlexUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
