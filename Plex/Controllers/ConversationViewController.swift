@@ -13,10 +13,6 @@ class ConversationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
-        
-        
-        
     }
     
     //check if user is logged in/launchcontroller
@@ -33,6 +29,5 @@ class ConversationViewController: UIViewController {
             present(nav, animated: false)
         }
     }
-    
 }
 
